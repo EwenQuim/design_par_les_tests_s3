@@ -1,4 +1,4 @@
 module.exports = {
-  RED: '*',
+  RED: 'x',
   YELLOW: 'o',
 }
