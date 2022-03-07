@@ -5,7 +5,7 @@ const { expect } = require('./test-helper')
 
 describe('analyser', () => {
   describe('isGridWon', () => {
-    it('should return false for an empty grid', () => {
+    it('given an empty grid then it returns did not win', () => {
       // ARRANGE
       const emptyGrid = new Grid()
 
@@ -16,7 +16,7 @@ describe('analyser', () => {
       expect(result).to.be.false
     })
 
-    it('should return true when four same token are on first row', () => {
+    it('given a grid with for yellow token on first column then it returns did win', () => {
       // ARRANGE
       const grid = new Grid()
       grid.addToken({ column: 0, token: YELLOW })
