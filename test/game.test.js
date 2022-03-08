@@ -1,4 +1,6 @@
 const Game = require('../src/game')
+const sinon = require('sinon')
+const { expect } = require('./test-helper')
 
 describe('Game', () => {
   it('given a new game when started then it prints the welcome message', () => {
